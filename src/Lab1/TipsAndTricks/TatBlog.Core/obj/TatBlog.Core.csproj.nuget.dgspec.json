@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {}
+    "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {}
   },
   "projects": {
-    "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+    "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "projectUniqueName": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
         "projectName": "TatBlog.Core",
-        "projectPath": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "projectPath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Core\\obj\\",
+        "outputPath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

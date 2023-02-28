@@ -3570,11 +3570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "projectUniqueName": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
       "projectName": "TatBlog.WinApp",
-      "projectPath": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "projectPath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
+      "outputPath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3591,14 +3591,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-              "projectPath": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+            "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+              "projectPath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
             },
-            "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-              "projectPath": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+            "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+              "projectPath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
             },
-            "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
-              "projectPath": "D:\\WebNC\\Lab1\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
+            "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
+              "projectPath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
             }
           }
         }
