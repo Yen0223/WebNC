@@ -21,8 +21,8 @@ foreach (var author in authors)
     Console.WriteLine("{0,-4}{1,-30}{2,-30}{3,12:MM/dd/yyyy}",
         author.Id, author.FullName, author.Email, author.JoinedDate);
 
-}
-*/
+}*/
+
 
 /*var posts = context.Posts
     .Where(p => p.Published)
@@ -47,7 +47,7 @@ Console.WriteLine("{0,-5}{1,-50}{2,10}",
 
 foreach (var item in categories)
 {
-    Console.WriteLine("{ 0,-5{ 1,-50}{ 2,10}",
+    Console.WriteLine("{0,-5}{1,-50}{2,10}",
         item.Id , item.Name, item.PostCount);
 }
 
