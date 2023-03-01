@@ -4,6 +4,7 @@
 using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
+using TatBlog.WinApp;
 
 var context = new BlogDbContext();
 
@@ -39,7 +40,7 @@ foreach (var author in authors)
     .ToList();*/
 
 IBlogRepository blogRepo = new BlogRepository(context);
-
+/*
 var categories = await blogRepo.GetCategoriesAsync();
 
 Console.WriteLine("{0,-5}{1,-50}{2,10}",
@@ -48,9 +49,9 @@ Console.WriteLine("{0,-5}{1,-50}{2,10}",
 foreach (var item in categories)
 {
     Console.WriteLine("{0,-5}{1,-50}{2,10}",
-        item.Id , item.Name, item.PostCount);
+        item.Id, item.Name, item.PostCount);
 }
-
+*/
 /*foreach (var post in posts)
 {
     Console.WriteLine("ID       : {0}", post.Id);
@@ -61,3 +62,22 @@ foreach (var item in categories)
     Console.WriteLine("Category :{0}", post.Category.Name);
     Console.WriteLine("".PadRight(80, '-'));
 }*/
+var pagingParams = new PagingParams
+{
+    PageNumber = 1,
+    PageSize = 5,
+    SortColumn = "Name",
+    SortOrder = "DESC"
+
+};
+
+var tagsList = await blogRepo.GetPagedTagsAsync(pagingParams);
+
+Console.WriteLine("{0,-5}{1,-50}{2,10}",
+    "ID", "Name", "Count");
+
+foreach (var item in tagsList)
+{
+    Console.WriteLine("{0,-5}{1,-50}{2,10}",
+        item.Id, item.Name, item.PostCount);
+}

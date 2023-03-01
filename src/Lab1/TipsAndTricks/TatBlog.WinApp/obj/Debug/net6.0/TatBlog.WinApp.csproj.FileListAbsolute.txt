@@ -75,3 +75,4 @@ D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WinApp\obj\Debug\net6.0\refint\TatBlog.
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WinApp\obj\Debug\net6.0\TatBlog.WinApp.pdb
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WinApp\obj\Debug\net6.0\TatBlog.WinApp.genruntimeconfig.cache
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WinApp\obj\Debug\net6.0\ref\TatBlog.WinApp.dll
+D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WinApp\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
