@@ -40,9 +40,18 @@ foreach (var author in authors)
 
 IBlogRepository blogRepo = new BlogRepository(context);
 
-var posts = await blogRepo.GetPopularArticlesAsync(3);
+var categories = await blogRepo.GetCategoriesAsync();
 
-foreach (var post in posts)
+Console.WriteLine("{0,-5}{1,-50}{2,10}",
+    "ID", "Name", "Count");
+
+foreach (var item in categories)
+{
+    Console.WriteLine("{ 0,-5{ 1,-50}{ 2,10}",
+        item.Id , item.Name, item.PostCount);
+}
+
+/*foreach (var post in posts)
 {
     Console.WriteLine("ID       : {0}", post.Id);
     Console.WriteLine("Title    : {0}", post.Title);
@@ -51,4 +60,4 @@ foreach (var post in posts)
     Console.WriteLine("Author   : {0}", post.Author.FullName);
     Console.WriteLine("Category :{0}", post.Category.Name);
     Console.WriteLine("".PadRight(80, '-'));
-}
+}*/
