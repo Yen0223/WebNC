@@ -13,22 +13,28 @@
 			</div>
 			<div class="col-md-8">
 				<div class="card-body">
+					<a href="/blog/post/@Model.PostedDate.ToString("yyyy,MM,dd")/@Model.UrlSlug">
 					<h5 class="card-title">
 						@Model.Title
 					</h5>
+					</a>
 					<p class="card-text"> 
 						<small class="text-muted">
 							Tác giả:
 						</small>
+						<a href="/blog/@Model.Author.UrlSlug">
 						<span class="text-primary">
 							@Model.Author.FullName
 						</span>
+						</a>
 						<small class="text-muted">
 							Chủ đề:
 						</small>
+						<a href="/blog/@Model.Category.UrlSlug">
 						<span class="text-primary">
 							@Model.Category.Name
 						</span>
+						</a>
 					</p>
 					<p class="card-text">
 						@Html.Raw(Model.ShortDesciption)
