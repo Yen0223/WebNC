@@ -148,14 +148,80 @@ public class BlogRepository : IBlogRepository
 
 	private IQueryable<Post> FilterPosts(PostQuery condition)
 	{
-		return _context.Set<Post>()
-				.Include(a => a.Author)
-				.Include(a => a.Category)
-		        .Include(a => a.Tags)
-		        .Where(p =>
-		                    ((p.PostedDate.Month == condition.MonthPost) || condition.MonthPost == 0) &&
-		                    ((p.PostedDate.Year == condition.YearPost) || condition.YearPost == 0) &&
-						    (p.Published == condition.PublishedOnly));
+		IQueryable<Post> posts = _context.Set<Post>()
+			.Include(x => x.Category)
+			.Include(x => x.Author)
+			.Include(x => x.Tags);
 
+		if (condition.PublishedOnly)
+		{
+			posts = posts.Where(x => x.Published);
+		}
+
+		if (condition.NotPublished)
+		{
+			posts = posts.Where(x => !x.Published);
+		}
+
+		if (condition.CategoryId > 0)
+		{
+			posts = posts.Where(x => x.CategoryId == condition.CategoryId);
+		}
+
+		if (!string.IsNullOrWhiteSpace(condition.CategorySlug))
+		{
+			posts = posts.Where(x => x.Category.UrlSlug == condition.CategorySlug);
+		}
+
+		if (condition.AuthorId > 0)
+		{
+			posts = posts.Where(x => x.AuthorId == condition.AuthorId);
+		}
+
+		if (!string.IsNullOrWhiteSpace(condition.AuthorSlug))
+		{
+			posts = posts.Where(x => x.Author.UrlSlug == condition.AuthorSlug);
+		}
+
+		if (!string.IsNullOrWhiteSpace(condition.TagSlug))
+		{
+			posts = posts.Where(x => x.Tags.Any(t => t.UrlSlug == condition.TagSlug));
+		}
+
+		if (!string.IsNullOrWhiteSpace(condition.Keyword))
+		{
+			posts = posts.Where(x => x.Title.Contains(condition.Keyword) ||
+									 x.ShortDescription.Contains(condition.Keyword) ||
+									 x.Description.Contains(condition.Keyword) ||
+									 x.Category.Name.Contains(condition.Keyword) ||
+									 x.Tags.Any(t => t.Name.Contains(condition.Keyword)));
+		}
+
+		if (condition.YearPost > 0)
+		{
+			posts = posts.Where(x => x.PostedDate.Year == condition.YearPost);
+		}
+
+		if (condition.MonthPost > 0)
+		{
+			posts = posts.Where(x => x.PostedDate.Month == condition.MonthPost);
+		}
+
+		if (!string.IsNullOrWhiteSpace(condition.TitleSlug))
+		{
+			posts = posts.Where(x => x.UrlSlug == condition.TitleSlug);
+		}
+
+		return posts;
+
+	}
+
+	public async Task<Category> GetCategoryFromSlugAsync(
+        string slug,
+        CancellationToken cancellationToken = default)
+	{
+		return await _context.Set<Category>()
+			.Where(t => t.UrlSlug == slug)
+			.FirstOrDefaultAsync(cancellationToken);
 	}
 }

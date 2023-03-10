@@ -40,6 +40,9 @@ public interface IBlogRepository
     Task<Tag> GetTagFromSlugAsync(
         string slug,
         CancellationToken cancellationToken = default);
+    Task<Category> GetCategoryFromSlugAsync(
+        string slug,
+        CancellationToken cancellationToken = default);
 
     Task<IPagedList<Post>> GetPagedPostsAsync(
         PostQuery condition,

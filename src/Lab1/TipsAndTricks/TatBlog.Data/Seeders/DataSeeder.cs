@@ -170,7 +170,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "ASP.NET Core Diagnostic Scenarios",
-                ShortDesciption = "David and friends has a great repos",
+                ShortDescription = "David and friends has a great repos",
                 Description = "Here is a few great DON't and DO examples",
                 Meta = "Davod and friends has a great respository filled",
                 UrlSlug = "aspnet-core-diagnostic-scenarios",
@@ -188,79 +188,404 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "Learn Kotlin",
-                ShortDesciption = "Kotlin is a modern",
+                ShortDescription = "Kotlin is a modern",
                 Description = "Trending programming language",
                 Meta = "Kotlin is used to develop Android apps",
                 UrlSlug = "kotlin-tutorial",
                 Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
+                PostedDate = new DateTime(2021, 8, 30, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
+                Author = authors[1],
+                Category = categories[3],
                 Tags = new List<Tag>()
                 {
-                    tags[00]
+                    tags[2]
                 }
             },
             new()
             {
                 Title = "Python Database Handling",
-                ShortDesciption = "In our database section",
+                ShortDescription = "In our database section",
                 Description = "you will learn how to access and work with MySQL",
                 Meta = "and MongoDB databases",
                 UrlSlug = "python-mySQL-tutorial",
                 Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
+                PostedDate = new DateTime(2022, 9, 30, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
+                Author = authors[1],
+                Category = categories[4],
                 Tags = new List<Tag>()
                 {
-                    tags[00]
+                    tags[3]
                 }
             },
             new()
             {
                 Title = "PHP Exercises",
-                ShortDesciption = "PHP is a server scripting language",
+                ShortDescription = "PHP is a server scripting language",
                 Description = "and a powerful tool for making dynamic",
                 Meta = "and a powerful tool for making dynamic ",
                 UrlSlug = "and-efficient-alternative-to-competitors",
                 Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
+                PostedDate = new DateTime(2021, 1, 30, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
+                Author = authors[2],
+                Category = categories[2],
                 Tags = new List<Tag>()
                 {
-                    tags[00]
+                    tags[5]
                 }
             },
             new()
             {
                 Title = "Go Tutorial",
-                ShortDesciption = "Go is a popular programming language",
+                ShortDescription = "Go is a popular programming language",
                 Description = "Go is used to create computer programs",
                 Meta = "you can edit Go code and view",
                 UrlSlug = "go-code-and-view-the-resul",
                 Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
+                PostedDate = new DateTime(2021, 4, 30, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
+                Author = authors[2],
+                Category = categories[3],
                 Tags = new List<Tag>()
                 {
-                    tags[00]
+                    tags[6]
                 }
             },
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2021, 7, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[4],
+                Category = categories[2],
+                Tags = new List<Tag>()
+                {
+                    tags[8]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 1, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[4],
+                Category = categories[4],
+                Tags = new List<Tag>()
+                {
+                    tags[5]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 2, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[3],
+                Category = categories[4],
+                Tags = new List<Tag>()
+                {
+                    tags[9]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 3, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[3],
+                Category = categories[3],
+                Tags = new List<Tag>()
+                {
+                    tags[10]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 4, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[2],
+                Category = categories[4],
+                Tags = new List<Tag>()
+                {
+                    tags[8]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 10, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[1],
+                Category = categories[4],
+                Tags = new List<Tag>()
+                {
+                    tags[12]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 12, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[2],
+                Category = categories[1],
+                Tags = new List<Tag>()
+                {
+                    tags[1],
+                    tags[2]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2021, 12, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[1],
+                Category = categories[5],
+                Tags = new List<Tag>()
+                {
+                    tags[13]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 11, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[5],
+                Category = categories[1],
+                Tags = new List<Tag>()
+                {
+                    tags[6]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2021, 11, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[5],
+                Category = categories[3],
+                Tags = new List<Tag>()
+                {
+                    tags[15]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 4, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[5],
+                Category = categories[12],
+                Tags = new List<Tag>()
+                {
+                    tags[14]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2023, 1, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[5],
+                Category = categories[10],
+                Tags = new List<Tag>()
+                {
+                    tags[15]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2023, 2, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[4],
+                Category = categories[16],
+                Tags = new List<Tag>()
+                {
+                    tags[17]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2023, 3, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[3],
+                Category = categories[10],
+                Tags = new List<Tag>()
+                {
+                    tags[20]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 12, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[5],
+                Category = categories[11],
+                Tags = new List<Tag>()
+                {
+                    tags[11]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2021, 4, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[1],
+                Category = categories[14],
+                Tags = new List<Tag>()
+                {
+                    tags[20]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2022, 3, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[4],
+                Category = categories[15],
+                Tags = new List<Tag>()
+                {
+                    tags[21]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
+                Description = "React is used to build single-page",
+                Meta = "React allows us to create reusable",
+                UrlSlug = "shows-both-the-code",
+                Published = true,
+                PostedDate = new DateTime(2021, 4, 30, 10, 20, 0),
+                ModifiedDate = null,
+                ViewCount = 10,
+                Author = authors[3],
+                Category = categories[13],
+                Tags = new List<Tag>()
+                {
+                    tags[10]
+                }
+            },
+            new()
+            {
+                Title = "React Tutorial",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -278,7 +603,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -296,7 +621,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -314,7 +639,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -332,7 +657,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -350,7 +675,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -368,7 +693,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -386,7 +711,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -404,7 +729,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
@@ -422,331 +747,7 @@ public class DataSeeder : IDataSeeder
             new()
             {
                 Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
-                Description = "React is used to build single-page",
-                Meta = "React allows us to create reusable",
-                UrlSlug = "shows-both-the-code",
-                Published = true,
-                PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                ModifiedDate = null,
-                ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
-                Tags = new List<Tag>()
-                {
-                    tags[00]
-                }
-            },
-            new()
-            {
-                Title = "React Tutorial",
-                ShortDesciption = "React is a JavaScript library",
+                ShortDescription = "React is a JavaScript library",
                 Description = "React is used to build single-page",
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",

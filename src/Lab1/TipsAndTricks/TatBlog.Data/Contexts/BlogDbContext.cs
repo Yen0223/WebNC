@@ -19,18 +19,19 @@ public class BlogDbContext : DbContext
 
     public DbSet<Tag> Tags { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlServer(@"Server=LAPTOP-AREQ7Q3P\LAMYEN;Database=TatBlog;
-            Trusted_Connection=True;MultipleActiveReSultSets=true;Encrypt=False");
-    }
+
 
     public BlogDbContext(DbContextOptions<BlogDbContext> options)
         : base(options)
     {
     }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+	{
+		optionsBuilder.UseSqlServer(@"Server=LAPTOP-AREQ7Q3P\LAMYEN;Database=TatBlog;
+            Trusted_Connection=True;MultipleActiveReSultSets=true;Encrypt=False");
+	}
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryMap).Assembly);
     }

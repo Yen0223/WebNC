@@ -39,7 +39,34 @@ namespace WebApp.Controllers
             return View(postList);
         }
 
-        public IActionResult About() 
+		public async Task<IActionResult> Category(
+			string slug,
+			[FromQuery(Name = "p")] int pageNumber = 1,
+			[FromQuery(Name = "ps")] int pageSize = 10)
+		{
+            //Tạo đối tượng chứa điều kiện truy vấn
+            var postQuery = new PostQuery()
+            {
+                //Chỉ lấy bài viết có trạng thái published
+                PublishedOnly = true,
+
+                //Tìm kiếm bài viết theo từ khóa
+                CategorySlug = slug
+			};
+
+			//Truy vấn bài viết theo dk đã tạo
+			var postList = await _blogRepository
+				.GetPagedPostsAsync(postQuery, pageNumber, pageSize);
+
+            var category =await _blogRepository.GetCategoryFromSlugAsync(slug);
+			//Lưu lại dk truy vấn để hiển thị trong View
+			ViewBag.NameCategory = category.Name;
+
+			//Truyền danh sách bài viết vào View để render ra HTML
+			return View(postList);
+		}
+
+		public IActionResult About() 
             => View();
 
         public IActionResult Contact() 
