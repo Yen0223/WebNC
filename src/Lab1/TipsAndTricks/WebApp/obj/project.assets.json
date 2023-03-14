@@ -59,6 +59,31 @@
           }
         }
       },
+      "Mapster/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Mapster.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.dll": {}
+        }
+      },
+      "Mapster.DependencyInjection/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Mapster": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Mapster.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.11": {
         "type": "package",
         "compile": {
@@ -2756,7 +2781,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.1/_._": {
+          "ref/netstandard1.1/System.Reflection.Emit.dll": {
             "related": ".xml"
           }
         },
@@ -2772,7 +2797,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {
+          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {
             "related": ".xml"
           }
         },
@@ -3699,6 +3724,38 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Mapster/5.0.0": {
+      "sha512": "Fe1sEpAKTj6OlMIVMh+TzEineuxh8z+Ea3IfeGIW8Nj52lkrd5u9xgfNX3Ec9DC5RHXY3LjdQDgzM1ttVDmUVw==",
+      "type": "package",
+      "path": "mapster/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net40/Mapster.dll",
+        "lib/net45/Mapster.dll",
+        "lib/netstandard1.3/Mapster.dll",
+        "lib/netstandard2.0/Mapster.dll",
+        "mapster.5.0.0.nupkg.sha512",
+        "mapster.nuspec"
+      ]
+    },
+    "Mapster.DependencyInjection/1.0.0": {
+      "sha512": "nNSGrgu5GirZ8nmuFXHGct+GwXjmbAAb+UqBl3Bwx/vbkCOypuvOziC+wTaNEjz/OE6LMg8yMCZzOtl59Lxw9Q==",
+      "type": "package",
+      "path": "mapster.dependencyinjection/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net40/Mapster.DependencyInjection.dll",
+        "lib/net45/Mapster.DependencyInjection.dll",
+        "lib/netstandard1.3/Mapster.DependencyInjection.dll",
+        "lib/netstandard2.0/Mapster.DependencyInjection.dll",
+        "mapster.dependencyinjection.1.0.0.nupkg.sha512",
+        "mapster.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.11": {
@@ -10530,6 +10587,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Mapster.DependencyInjection >= 1.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.4",
       "TatBlog.Core >= 1.0.0",
       "TatBlog.Data >= 1.0.0",
@@ -10590,6 +10648,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Mapster.DependencyInjection": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[7.0.4, )"

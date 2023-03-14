@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "oLAstvUHaZuPXSjnOTTnN/ccPdzRUBNy11pNsM1t98jw/z9Lo9qfSNOFkHnIfwZOAV6JkLDE6AqESpfDkkIQuQ==",
+  "dgSpecHash": "Gtll3Jy7dMjGbk5+Rp3wwmAJD21ITXSe6DLKkSuun/VnJZyRnvXlt7JmkjYmGTksgrgZmGYiNq6Pv7Kb3D8/xw==",
   "success": true,
   "projectFilePath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\mapster\\5.0.0\\mapster.5.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\mapster.dependencyinjection\\1.0.0\\mapster.dependencyinjection.1.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

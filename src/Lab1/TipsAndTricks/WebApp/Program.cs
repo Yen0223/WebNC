@@ -3,13 +3,14 @@ using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
 using WebApp.Extensions;
-
+using WebApp.Mapsters;
 
 var builder = WebApplication.CreateBuilder(args);
 {
 	builder
 		.ConfigureMvc()
-		.ConfigureServices();
+		.ConfigureServices()
+		.ConfigureMapster();
 }
 
 //Thêm dữ liêu mẫu vào CSDL
