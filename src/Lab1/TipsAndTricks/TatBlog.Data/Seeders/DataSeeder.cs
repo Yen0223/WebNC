@@ -178,8 +178,8 @@ public class DataSeeder : IDataSeeder
                 PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
-                Author = authors[0],
-                Category = categories[0],
+                Author = authors[4],
+                Category = categories[10],
                 Tags = new List<Tag>()
                 {
                     tags[00]
@@ -301,7 +301,7 @@ public class DataSeeder : IDataSeeder
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
                 Published = true,
-                PostedDate = new DateTime(2022, 2, 30, 10, 20, 0),
+                PostedDate = new DateTime(2022, 2, 15, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
                 Author = authors[3],
@@ -464,7 +464,7 @@ public class DataSeeder : IDataSeeder
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
                 Published = true,
-                PostedDate = new DateTime(2023, 1, 30, 10, 20, 0),
+                PostedDate = new DateTime(2023, 1, 12, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
                 Author = authors[5],
@@ -482,7 +482,7 @@ public class DataSeeder : IDataSeeder
                 Meta = "React allows us to create reusable",
                 UrlSlug = "shows-both-the-code",
                 Published = true,
-                PostedDate = new DateTime(2023, 2, 30, 10, 20, 0),
+                PostedDate = new DateTime(2023, 2, 3, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
                 Author = authors[4],
