@@ -242,4 +242,24 @@ public class BlogRepository : IBlogRepository
             })
             .ToListAsync();
 	}
+
+	public async Task<Post> GetPostByIdAsync(
+        int id,
+		bool includeDetail = false,
+		CancellationToken cancellationToken = default)
+	{
+        if (!includeDetail)
+        {
+            return await _context.Set<Post>()
+                .FindAsync(id);
+        }
+
+        return await _context.Set<Post>()
+            .Include(p => p.Category)
+			.Include(p => p.Author)
+			.Include(p => p.Tags)
+			.FirstOrDefaultAsync(p => p.Id == id, cancellationToken);
+
+
+	}
 }
