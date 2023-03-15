@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TatBlog.Core.DTO;
+using TatBlog.Core.Entities;
 using TatBlog.Services.Blogs;
 using WebApp.Areas.Admin.Models;
 
@@ -47,12 +48,59 @@ namespace WebApp.Areas.Admin.Controllers
 				: _mapper.Map<PostEditModel>(post);
 
 			//Gán các giá trị khác cho view model
-			await PopulatePostFilterModeAsync(model);
+			await PopulatePostEditModeAsync(model);
 
 
 			return View(model);
 
 		}
+
+		[HttpPost]
+		public async Task<IActionResult> Edit(PostEditModel model)
+		{
+			if (!ModelState.IsValid)
+			{
+				await PopulatePostEditModeAsync(model);
+				return View(model);
+			}
+
+			var post = model.Id > 0 
+				? await _blogRepository.GetPostByIdAsync(model.Id)
+				: null;
+
+			if (post == null)
+			{
+				post = _mapper.Map<Post>(model);
+
+				post.Id = 0;
+				post.PostedDate = DateTime.Now;
+			}
+			else
+			{
+				_mapper.Map(model, post);
+
+				post.Category = null;
+				post.ModifiedDate = DateTime.Now;
+			}
+			await _blogRepository.CreateOrUpdatePostAsync(
+				post, model.GetSelectedTags());
+
+			return RedirectToAction(nameof(Index));
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> VerifyPostSlug(
+			int id, string urlSlug)
+		{
+			var slugExisted = await _blogRepository
+				.IsPostSlugExistedAsync(id, urlSlug);
+
+			return slugExisted
+				? Json($"Slug '{urlSlug}' đã được sử dụng")
+				: Json(true);
+		}
+
+
 
 		private async Task PopulatePostFilterModeAsync(PostFilterModel model)
 		{
@@ -72,7 +120,7 @@ namespace WebApp.Areas.Admin.Controllers
 			});
 		}
 
-		private async Task PopulatePostFilterModeAsync(PostEditModel model)
+		private async Task PopulatePostEditModeAsync(PostEditModel model)
 		{
 			var authors = await _blogRepository.GetAuthorsAsync();
 			var categories = await _blogRepository.GetCategoriesAsync();
@@ -89,5 +137,7 @@ namespace WebApp.Areas.Admin.Controllers
 				Value = c.Id.ToString()
 			});
 		}
+
+
 	}
 }

@@ -597,6 +597,18 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\lib\\speakingurl\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\speakingurl"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\lib\\speakingurl\\README.md",
+      "PackagePath": "staticwebassets\\lib\\speakingurl\\README.md"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\lib\\speakingurl\\speakingurl.min.js",
+      "PackagePath": "staticwebassets\\lib\\speakingurl\\speakingurl.min.js"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

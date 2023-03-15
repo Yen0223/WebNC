@@ -36,7 +36,11 @@ public interface IBlogRepository
         bool showOnMenu = false,
         CancellationToken cancellationToken = default);
 
-    Task<IPagedList<TagItem>> GetPagedTagsAsync(
+    Task<Tag> GetTagAsync(
+        string slug, CancellationToken cancellationToken = default);
+
+
+	Task<IPagedList<TagItem>> GetPagedTagsAsync(
         IPagingParams pagingParams,
         CancellationToken cancellationToken = default);
 
@@ -56,6 +60,10 @@ public interface IBlogRepository
     Task<Post> GetPostByIdAsync(
         int id,
         bool includeDetail = false,
+        CancellationToken cancellationToken = default);
+
+    Task<Post> CreateOrUpdatePostAsync(
+        Post post, IEnumerable<string> tags,
         CancellationToken cancellationToken = default);
 
 }
