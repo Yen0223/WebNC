@@ -609,6 +609,10 @@
       "PackagePath": "staticwebassets\\lib\\speakingurl\\speakingurl.min.js"
     },
     {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

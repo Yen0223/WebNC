@@ -258,6 +258,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
             "Mapster.DependencyInjection": {
               "target": "Package",
               "version": "[1.0.0, )"

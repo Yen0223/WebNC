@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mwmVUrz6bPAxAROF31TwgF2MtDYfT0ahSeB858IYv50=",
+  "Hash": "SqBwWgpthDbO7iTg4fnkPUb7Qiqs+iQimLFjoAccuqk=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -2599,6 +2599,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\speakingurl\\speakingurl.min.js"
+    },
+    {
+      "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "uploads/pictures/71d81801f2014923a8c77c8a1fcfb35f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg"
     }
   ]
 }

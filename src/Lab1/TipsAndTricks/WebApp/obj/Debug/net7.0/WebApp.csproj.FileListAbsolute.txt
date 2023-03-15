@@ -279,3 +279,7 @@ D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\Mapster.dll
 D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\Mapster.DependencyInjection.dll
 D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
 D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\FluentValidation.dll
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\obj\Debug\net7.0\WebApp.MvcApplicationPartsAssemblyInfo.cs
