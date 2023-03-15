@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pUKCEHABX84VWObaDHWHbuaxt8zZfJ+68BWuDQ4wVfM=",
+  "Hash": "mwmVUrz6bPAxAROF31TwgF2MtDYfT0ahSeB858IYv50=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -117,23 +117,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\image3.jpg"
-    },
-    {
-      "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\image4.jpg",
-      "SourceId": "WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\",
-      "BasePath": "_content/WebApp",
-      "RelativePath": "images/image4.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\image4.jpg"
     },
     {
       "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\image5.jpg",
@@ -270,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\person4.jpg"
+    },
+    {
+      "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\tulip.png",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "images/tulip.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tulip.png"
     },
     {
       "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\js\\main.js",

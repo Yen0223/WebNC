@@ -38,10 +38,10 @@ namespace WebApp.Areas.Admin.Models
 		public string UrlSlug { get; set; }
 
 		[DisplayName("Chọn hình ảnh")]
-		public string ImageFile { get; set; }
+		public IFormFile? ImageFile { get; set; }
 
 		[DisplayName("Hình hiện tại")]
-		public string ImageUrl { get; set; }
+		public string? ImageUrl { get; set; }
 
 		[DisplayName("Xuất bản ngay")]
 		public bool Published { get; set; }
@@ -60,9 +60,9 @@ namespace WebApp.Areas.Admin.Models
 		[Required(ErrorMessage = "Bạn chưa nhập tên thẻ")]
 		public string SelectedTags { get; set; }
 
-        public IEnumerable<SelectListItem> AuthorList { get; set; }
+        public IEnumerable<SelectListItem>? AuthorList { get; set; }
 
-		public IEnumerable<SelectListItem> CategoryList { get; set; }
+		public IEnumerable<SelectListItem>? CategoryList { get; set; }
 
 
 		//Tách chuỗi chứa các thẻ thành 1 mảng các chuỗi

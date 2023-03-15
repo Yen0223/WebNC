@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\images\\image3.jpg"
     },
     {
-      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\image4.jpg",
-      "PackagePath": "staticwebassets\\images\\image4.jpg"
-    },
-    {
       "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\image5.jpg",
       "PackagePath": "staticwebassets\\images\\image5.jpg"
     },
@@ -59,6 +55,10 @@
     {
       "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\person4.jpg",
       "PackagePath": "staticwebassets\\images\\person4.jpg"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\tulip.png",
+      "PackagePath": "staticwebassets\\images\\tulip.png"
     },
     {
       "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\js\\main.js",
