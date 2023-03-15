@@ -6,10 +6,12 @@ using WebApp.Extensions;
 using WebApp.Mapsters;
 using WebApp.Validations;
 
+
 var builder = WebApplication.CreateBuilder(args);
 {
 	builder
 		.ConfigureMvc()
+		.ConfigureNlog()
 		.ConfigureServices()
 		.ConfigureMapster()
 		.ConfigureFluentValidation();

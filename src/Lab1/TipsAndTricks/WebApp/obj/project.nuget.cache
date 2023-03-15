@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fo29AnqjlSNGnIY9kKF4l1js7uaYBpBa/w4Opl3N7XEb9ds1Vu0wiN3Y1WRzI7QKlOk325qRg6+CqS3kBgYl8A==",
+  "dgSpecHash": "ZcNC5I6RLl5hlZXyfiMWNwbCcjsrkAUo8zOFeZCa+1N1QaEHgCOi7NlLq2xNgg+AwN6L+sPrhAHgf0KXMGTOhw==",
   "success": true,
   "projectFilePath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
@@ -118,6 +118,9 @@
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\nlog\\5.1.2\\nlog.5.1.2.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\nlog.extensions.logging\\5.2.2\\nlog.extensions.logging.5.2.2.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.2\\nlog.web.aspnetcore.5.2.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",

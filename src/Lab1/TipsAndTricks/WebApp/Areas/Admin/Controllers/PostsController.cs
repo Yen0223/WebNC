@@ -14,13 +14,18 @@ namespace WebApp.Areas.Admin.Controllers
 	public class PostsController : Controller
 	{
 	
-
+		private readonly ILogger<PostsController> _logger;
 		private readonly IBlogRepository _blogRepository;
 		private readonly IMapper _mapper;
 		private readonly IMediaManager _mediaManager;
 
-		public PostsController(IBlogRepository blogRepository,IMediaManager mediaManager, IMapper mapper)
+		public PostsController(
+			ILogger<PostsController> logger,
+			IBlogRepository blogRepository,
+			IMediaManager mediaManager, 
+			IMapper mapper)
 		{
+			_logger = logger;
 			_blogRepository = blogRepository;
 			_mediaManager = mediaManager;
 			_mapper = mapper;
@@ -28,10 +33,18 @@ namespace WebApp.Areas.Admin.Controllers
 
 		public async Task<IActionResult> Index(PostFilterModel model)
 		{
+
+			_logger.LogInformation("Tạo điều kiện truy vấn");
+
+			//sd mapster tạo obj PostQuery từ PostFilterModel model
 			var postQuery = _mapper.Map<PostQuery>(model);
+
+			_logger.LogInformation("Lấy danh sách bài viết từ CSDL");
 
 			ViewBag.PostsList = await _blogRepository
 				.GetPagedPostsAsync(postQuery, 1, 10);
+
+			_logger.LogInformation("Chuẩn bị dữ liệu cho ViewModel");
 
 			await PopulatePostFilterModeAsync(model);
 

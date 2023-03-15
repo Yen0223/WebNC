@@ -283,3 +283,7 @@ D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\FluentValidation.dll
 D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Web NC\src\Lab1\TipsAndTricks\WebApp\obj\Debug\net7.0\WebApp.MvcApplicationPartsAssemblyInfo.cs
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\nlog.config
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\NLog.dll
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\NLog.Extensions.Logging.dll
+D:\Web NC\src\Lab1\TipsAndTricks\WebApp\bin\Debug\net7.0\NLog.Web.AspNetCore.dll
