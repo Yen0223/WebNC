@@ -32,9 +32,11 @@ namespace WebApp.Extensions
 				name: "admin",
 				areaName: "admin",
 				pattern: "admin/{controller=Dashboard}/{action=Index}/{id?}");
+
 			endpoint.MapControllerRoute(
 				name: "admin-area",
 				pattern: "{area:exists}/{controller}/{action}/{id?}");
+
 			endpoint.MapControllerRoute(
 				name: "default",
 				pattern: "{controller=Blog}/{action=Index}/{id?}");

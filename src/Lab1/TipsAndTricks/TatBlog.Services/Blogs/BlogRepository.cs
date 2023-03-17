@@ -334,4 +334,16 @@ public class BlogRepository : IBlogRepository
 
 		return post;
 	}
+	public async Task<bool> TogglePublishedFlagAsync(
+		int postId, CancellationToken cancellationToken = default)
+	{
+		var post = await _context.Set<Post>().FindAsync(postId);
+
+		if (post is null) return false;
+
+		post.Published = !post.Published;
+		await _context.SaveChangesAsync(cancellationToken);
+
+		return post.Published;
+	}
 }

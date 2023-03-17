@@ -33,7 +33,7 @@ namespace WebApp.Areas.Admin.Controllers
 
 		public async Task<IActionResult> Index(PostFilterModel model,
 			[FromQuery(Name = "p")] int pageNumber = 1,
-			[FromQuery(Name = "ps")] int pageSize = 3
+			[FromQuery(Name = "ps")] int pageSize = 5
 			)
 		{
 
@@ -147,6 +147,17 @@ namespace WebApp.Areas.Admin.Controllers
 			return slugExisted
 				? Json($"Slug '{urlSlug}' đã được sử dụng")
 				: Json(true);
+		}
+
+		/// <summary>
+		/// Chuyển đổi trạng thái xuất bản
+		/// </summary>
+		/// <param name="id"></param>
+		/// <returns></returns>
+		public async Task<IActionResult> SwithPulished(int id)
+		{
+			await _blogRepository.TogglePublishedFlagAsync(id);
+			return RedirectToAction(nameof(Index));
 		}
 
 
