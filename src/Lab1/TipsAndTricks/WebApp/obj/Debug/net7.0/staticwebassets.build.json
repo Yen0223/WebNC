@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SqBwWgpthDbO7iTg4fnkPUb7Qiqs+iQimLFjoAccuqk=",
+  "Hash": "c7Ka7MYpT3ekM5Q1C9JDZ1UK7dydcldtsNZmDjPNcuM=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -2616,6 +2616,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg"
+    },
+    {
+      "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\9b042eee425043eb96012a19d053c940.png",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "uploads/pictures/9b042eee425043eb96012a19d053c940.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pictures\\9b042eee425043eb96012a19d053c940.png"
+    },
+    {
+      "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\d9972a7758954062aa7b303742831c68.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "uploads/pictures/d9972a7758954062aa7b303742831c68.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pictures\\d9972a7758954062aa7b303742831c68.jpg"
+    },
+    {
+      "Identity": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\daf1abc6f35749c98f8ed64f3942c06c.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "uploads/pictures/daf1abc6f35749c98f8ed64f3942c06c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pictures\\daf1abc6f35749c98f8ed64f3942c06c.jpg"
     }
   ]
 }

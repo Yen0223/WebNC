@@ -13,7 +13,7 @@ namespace WebApp.Areas.Admin.Controllers
 {
 	public class PostsController : Controller
 	{
-	
+
 		private readonly ILogger<PostsController> _logger;
 		private readonly IBlogRepository _blogRepository;
 		private readonly IMapper _mapper;
@@ -22,7 +22,7 @@ namespace WebApp.Areas.Admin.Controllers
 		public PostsController(
 			ILogger<PostsController> logger,
 			IBlogRepository blogRepository,
-			IMediaManager mediaManager, 
+			IMediaManager mediaManager,
 			IMapper mapper)
 		{
 			_logger = logger;
@@ -31,7 +31,10 @@ namespace WebApp.Areas.Admin.Controllers
 			_mapper = mapper;
 		}
 
-		public async Task<IActionResult> Index(PostFilterModel model)
+		public async Task<IActionResult> Index(PostFilterModel model,
+			[FromQuery(Name = "p")] int pageNumber = 1,
+			[FromQuery(Name = "ps")] int pageSize = 3
+			)
 		{
 
 			_logger.LogInformation("Tạo điều kiện truy vấn");
@@ -42,7 +45,7 @@ namespace WebApp.Areas.Admin.Controllers
 			_logger.LogInformation("Lấy danh sách bài viết từ CSDL");
 
 			ViewBag.PostsList = await _blogRepository
-				.GetPagedPostsAsync(postQuery, 1, 10);
+				.GetPagedPostsAsync(postQuery, pageNumber, pageSize);
 
 			_logger.LogInformation("Chuẩn bị dữ liệu cho ViewModel");
 
@@ -75,7 +78,7 @@ namespace WebApp.Areas.Admin.Controllers
 
 		[HttpPost]
 		public async Task<IActionResult> Edit(
-			IValidator<PostEditModel> postValidator,
+			[FromServices] IValidator<PostEditModel> postValidator,
 			PostEditModel model)
 		{
 			var validationResult = await postValidator.ValidateAsync(model);

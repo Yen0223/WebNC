@@ -613,6 +613,18 @@
       "PackagePath": "staticwebassets\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg"
     },
     {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\9b042eee425043eb96012a19d053c940.png",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\9b042eee425043eb96012a19d053c940.png"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\d9972a7758954062aa7b303742831c68.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\d9972a7758954062aa7b303742831c68.jpg"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\daf1abc6f35749c98f8ed64f3942c06c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\daf1abc6f35749c98f8ed64f3942c06c.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
