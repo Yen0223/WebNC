@@ -3,13 +3,18 @@ using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
 using WebApp.Extensions;
+using WebApp.Mapsters;
+using WebApp.Validations;
 
 
 var builder = WebApplication.CreateBuilder(args);
 {
 	builder
 		.ConfigureMvc()
-		.ConfigureServices();
+		.ConfigureNlog()
+		.ConfigureServices()
+		.ConfigureMapster()
+		.ConfigureFluentValidation();
 }
 
 //Thêm dữ liêu mẫu vào CSDL

@@ -164,6 +164,15 @@
         "css/font-awesome.css.map",
         "css/font-awesome.min.css"
       ]
+    },
+    {
+      "library": "speakingurl@14.0.1",
+      "destination": "wwwroot/lib/speakingurl/",
+      "files": [
+        "LICENSE",
+        "README.md",
+        "speakingurl.min.js"
+      ]
     }
   ]
 }

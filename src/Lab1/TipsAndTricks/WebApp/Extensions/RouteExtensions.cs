@@ -1,4 +1,7 @@
-﻿namespace WebApp.Extensions
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
+
+namespace WebApp.Extensions
 {
 	public static class RouteExtensions
 	{
@@ -25,6 +28,13 @@
 				pattern: "blog/post/{year:int}/{month:int}/{day:int}/{slug}",
 				defaults: new { controller = "Blog", action = "Post" });
 
+			endpoint.MapAreaControllerRoute(
+				name: "admin",
+				areaName: "admin",
+				pattern: "admin/{controller=Dashboard}/{action=Index}/{id?}");
+			endpoint.MapControllerRoute(
+				name: "admin-area",
+				pattern: "{area:exists}/{controller}/{action}/{id?}");
 			endpoint.MapControllerRoute(
 				name: "default",
 				pattern: "{controller=Blog}/{action=Index}/{id?}");

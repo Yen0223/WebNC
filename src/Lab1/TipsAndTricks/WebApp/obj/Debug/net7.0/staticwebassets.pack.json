@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\images\\image3.jpg"
     },
     {
-      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\image4.jpg",
-      "PackagePath": "staticwebassets\\images\\image4.jpg"
-    },
-    {
       "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\image5.jpg",
       "PackagePath": "staticwebassets\\images\\image5.jpg"
     },
@@ -59,6 +55,10 @@
     {
       "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\person4.jpg",
       "PackagePath": "staticwebassets\\images\\person4.jpg"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\images\\tulip.png",
+      "PackagePath": "staticwebassets\\images\\tulip.png"
     },
     {
       "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\js\\main.js",
@@ -595,6 +595,34 @@
     {
       "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\lib\\speakingurl\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\speakingurl"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\lib\\speakingurl\\README.md",
+      "PackagePath": "staticwebassets\\lib\\speakingurl\\README.md"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\lib\\speakingurl\\speakingurl.min.js",
+      "PackagePath": "staticwebassets\\lib\\speakingurl\\speakingurl.min.js"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\71d81801f2014923a8c77c8a1fcfb35f.jpg"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\9b042eee425043eb96012a19d053c940.png",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\9b042eee425043eb96012a19d053c940.png"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\d9972a7758954062aa7b303742831c68.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\d9972a7758954062aa7b303742831c68.jpg"
+    },
+    {
+      "Id": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\wwwroot\\uploads\\pictures\\daf1abc6f35749c98f8ed64f3942c06c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\daf1abc6f35749c98f8ed64f3942c06c.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
