@@ -160,6 +160,16 @@ namespace WebApp.Areas.Admin.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
+		/// <summary>
+		/// Xóa bài viết
+		/// </summary>
+		/// <param name="id"></param>
+		/// <returns></returns>
+		public async Task<IActionResult> DeletePost(int id)
+		{
+			await _blogRepository .DeletePostAsync(id);
+			return RedirectToAction(nameof(Index));
+		}
 
 
 		private async Task PopulatePostFilterModeAsync(PostFilterModel model)

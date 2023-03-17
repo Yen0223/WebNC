@@ -346,4 +346,30 @@ public class BlogRepository : IBlogRepository
 
 		return post.Published;
 	}
+
+	public async Task<bool> DeleteCategoryAsync(
+		int categoryId, CancellationToken cancellationToken = default)
+	{
+		var category = await _context.Set<Category>().FindAsync(categoryId);
+
+		if (category is null) return false;
+
+		_context.Set<Category>().Remove(category);
+		var rowsCount = await _context.SaveChangesAsync(cancellationToken);
+
+		return rowsCount > 0;
+	}
+
+	public async Task<bool> DeletePostAsync(
+		int postId, CancellationToken cancellationToken = default)
+	{
+		var post = await _context.Set<Post>().FindAsync(postId);
+
+		if(!post.Published) return false;
+
+		_context.Set<Post>().Remove(post);
+		var rowsCount = await _context.SaveChangesAsync(cancellationToken);
+
+		return rowsCount > 0;
+	}
 }

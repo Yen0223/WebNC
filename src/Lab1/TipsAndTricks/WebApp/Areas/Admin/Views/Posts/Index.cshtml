@@ -20,6 +20,7 @@
 				<th>Tác giả</th>
 				<th>Chủ đề</th>
 				<th>Xuất bản</th>
+				<th>Xóa bài</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -50,8 +51,17 @@
 							asp-controller="Posts"
 							asp-action="SwithPulished"
 							asp-route-id="@post.Id"
-						class="btn btn-outline-info">
+							class="btn btn-outline-info">
 							@(post.Published ? "Có" : "Không")
+						</a>
+					</td>
+					<td>
+						<a asp-area="Admin"
+							asp-controller="Posts"
+							asp-action="DeletePost"
+							asp-route-id="@post.Id"
+							class="btn btn-outline-danger">
+							Xóa
 						</a>
 					</td>
 				</tr>
