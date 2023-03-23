@@ -148,14 +148,6 @@ public class BlogRepository : IBlogRepository
             .ToPagedListAsync(pagingParams, cancellationToken);
     }
 
-    public async Task<Tag> GetTagFromSlugAsync(
-        string slug,
-        CancellationToken cancellationToken = default)
-    {
-        return await _context.Set<Tag>()
-            .Where(t => t.UrlSlug == slug)
-            .FirstOrDefaultAsync(cancellationToken);
-    }
 
     public async Task<IPagedList<Post>> GetPagedPostsAsync(
 		PostQuery condition,
@@ -244,6 +236,24 @@ public class BlogRepository : IBlogRepository
         CancellationToken cancellationToken = default)
 	{
 		return await _context.Set<Category>()
+			.Where(t => t.UrlSlug == slug)
+			.FirstOrDefaultAsync(cancellationToken);
+	}
+
+	public async Task<Author> GetAuthorFromSlugAsync(
+		string slug,
+		CancellationToken cancellationToken = default)
+	{
+		return await _context.Set<Author>()
+			.Where(a => a.UrlSlug == slug)
+			.FirstOrDefaultAsync(cancellationToken);
+	}
+
+	public async Task<Tag> GetTagFromSlugAsync(
+		string slug,
+		CancellationToken cancellationToken = default)
+	{
+		return await _context.Set<Tag>()
 			.Where(t => t.UrlSlug == slug)
 			.FirstOrDefaultAsync(cancellationToken);
 	}
