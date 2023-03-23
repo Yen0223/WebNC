@@ -88,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Web NC/src/Lab1/TipsAndTricks/WebApp/Views/Blog/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Web NC/src/Lab1/TipsAndTricks/WebApp/Views/Blog/_Pager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xfUGFnZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Web NC/src/Lab1/TipsAndTricks/WebApp/Views/Shared/Components/CategoriesWidget/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc1dpZGdldFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web NC/src/Lab1/TipsAndTricks/WebApp/Views/Shared/Components/FeaturedPosts/Defauld.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmVhdHVyZWRQb3N0c1xEZWZhdWxkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web NC/src/Lab1/TipsAndTricks/WebApp/Views/Shared/_Header.cshtml]

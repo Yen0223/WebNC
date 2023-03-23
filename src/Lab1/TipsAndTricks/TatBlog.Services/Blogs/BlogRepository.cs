@@ -30,7 +30,9 @@ public class BlogRepository : IBlogRepository
     {
         IQueryable<Post> postsQuery = _context.Set<Post>()
             .Include(x => x.Category)
-            .Include(x => x.Author);
+            .Include(x => x.Author)
+			.Include(x => x.Tags);	
+
         if (year > 0)
         {
             postsQuery = postsQuery.Where(x => x.PostedDate.Year == year);

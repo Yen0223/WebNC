@@ -66,7 +66,13 @@ namespace WebApp.Controllers
 			return View(postList);
 		}
 
-		public IActionResult About() 
+		public async Task<IActionResult> Post(
+			string slug, int year, int month)
+        {
+            var post = await _blogRepository.GetPostAsync(year, month, slug);
+            return View(post);
+        }
+			public IActionResult About() 
             => View();
 
         public IActionResult Contact() 
