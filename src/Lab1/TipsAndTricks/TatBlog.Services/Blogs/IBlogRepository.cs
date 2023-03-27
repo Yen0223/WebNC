@@ -85,5 +85,8 @@ public interface IBlogRepository
 
 	Task<IList<TagItem>> GetListTagAsync(
 		CancellationToken cancellationToken = default);
+	Task<IList<AuthorItem>> GetBestAuthorsAsync(
+		int number,
+		CancellationToken cancellationToken = default);
 
 }

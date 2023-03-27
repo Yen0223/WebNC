@@ -278,6 +278,27 @@ public class BlogRepository : IBlogRepository
             .ToListAsync();
 	}
 
+	public async Task<IList<AuthorItem>> GetBestAuthorsAsync(
+		int number, 
+		CancellationToken cancellationToken = default)
+	{
+		return await _context.Set<Author>()
+			.Select(a => new AuthorItem()
+			{
+				Id = a.Id,
+				FullName = a.FullName,
+				Email = a.Email,
+				JoinedDate = a.JoinedDate,
+				ImageUrl = a.ImageUrl,
+				UrlSlug = a.UrlSlug,
+				Notes = a.Notes,
+				PostCount = a.Posts.Count(p => p.Published)
+			})
+			.OrderByDescending(a => a.PostCount)
+			.Take(number)
+			.ToListAsync();
+	}
+
 	public async Task<Post> GetPostByIdAsync(
         int id,
 		bool includeDetail = false,
