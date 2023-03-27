@@ -434,4 +434,29 @@ public class BlogRepository : IBlogRepository
 			})
 			.ToListAsync(cancellationToken);
     }
+
+	public async Task<IList<DatePost>> GetPostByMonthAsync(
+		int month, 
+		CancellationToken cancellationToken = default)
+	{
+		var now = DateTime.Now;
+		return await _context.Set<Post>()
+			.Where(p => p.Published)
+			.GroupBy(p => new
+			{
+				p.PostedDate.Month,
+				p.PostedDate.Year,
+
+			},
+			(key,g) => new DatePost()
+			{
+				Month = key.Month,
+				Year = key.Year,
+				PostCount = g.Count()
+			})
+				.OrderByDescending(p => p.Year)
+				.ThenByDescending(p => p.Month)
+				.Take(month)
+				.ToListAsync(cancellationToken);
+	}
 }

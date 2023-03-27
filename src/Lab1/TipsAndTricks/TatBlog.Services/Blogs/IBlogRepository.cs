@@ -89,4 +89,8 @@ public interface IBlogRepository
 		int number,
 		CancellationToken cancellationToken = default);
 
+	Task<IList<DatePost>> GetPostByMonthAsync(
+		int month,
+		CancellationToken cancellationToken = default);
+
 }
