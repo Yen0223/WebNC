@@ -37,7 +37,8 @@ public interface IBlogRepository
 		CancellationToken cancellationToken = default);
 
 	Task<Tag> GetTagAsync(
-		string slug, CancellationToken cancellationToken = default);
+		string slug, 
+		CancellationToken cancellationToken = default);
 
 
 	Task<IPagedList<TagItem>> GetPagedTagsAsync(
@@ -67,12 +68,22 @@ public interface IBlogRepository
 		CancellationToken cancellationToken = default);
 
 	Task<bool> TogglePublishedFlagAsync(
-	   int postId, CancellationToken cancellationToken = default);
+	   int postId, 
+	   CancellationToken cancellationToken = default);
 
 	Task<bool> DeleteCategoryAsync(
-		int categoryId, CancellationToken cancellationToken = default);
+		int categoryId, 
+		CancellationToken cancellationToken = default);
 
 	Task<bool> DeletePostAsync(
-		int postId, CancellationToken cancellationToken = default);
+		int postId, 
+		CancellationToken cancellationToken = default);
+
+	Task<IList<Post>> GetRandomizePostsAsync(
+		int num, 
+		CancellationToken cancellationToken = default);
+
+	Task<IList<TagItem>> GetListTagAsync(
+		CancellationToken cancellationToken = default);
 
 }

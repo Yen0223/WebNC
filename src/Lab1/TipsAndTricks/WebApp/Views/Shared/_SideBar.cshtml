@@ -7,17 +7,15 @@
 	@await Component.InvokeAsync("CategoriesWidget")
 
 	<!-- Top bài viết nổi bật-->
-	<h1>
-		Bài viết nổi bật
-	</h1>
+	@await Component.InvokeAsync("OutstandPostWidget")
 
+	<!-- 6 bài viết ngẫu nhiên -->
+	@await Component.InvokeAsync("RandomPosts")
 	<!-- Đk nhận tin mới -->
 	<h1>
 		Đăng ký nhận tin mới
 	</h1>
 
 	<!-- Tag cloud -->
-	<h1>
-		Tag cloud
-	</h1>
+	@await Component.InvokeAsync("TagWidget")
 </div>

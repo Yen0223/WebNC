@@ -22,6 +22,8 @@ namespace WebApp.Areas.Admin.Models
 		[DisplayName("Tháng")]
 		public int? Month { get; set; }
 
+		public bool NotPublished { get; set; } = false;
+
 
 		public IEnumerable<SelectListItem> AuthorList { get; set; }
 		public IEnumerable<SelectListItem>CategoryList { get; set; }

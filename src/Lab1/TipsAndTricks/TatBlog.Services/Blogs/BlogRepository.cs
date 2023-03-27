@@ -373,7 +373,8 @@ public class BlogRepository : IBlogRepository
 	}
 
 	public async Task<bool> DeletePostAsync(
-		int postId, CancellationToken cancellationToken = default)
+		int postId, 
+		CancellationToken cancellationToken = default)
 	{
 		var post = await _context.Set<Post>().FindAsync(postId);
 
@@ -384,4 +385,32 @@ public class BlogRepository : IBlogRepository
 
 		return rowsCount > 0;
 	}
+
+	public async Task<IList<Post>> GetRandomizePostsAsync(
+		int num,
+		CancellationToken cancellationToken = default)
+	{
+		return await _context.Set<Post>()
+			.Include(a => a.Author)
+			.Include(c => c.Category)
+			.OrderBy(x => x.Id)
+			.Take(num)
+			.ToListAsync(cancellationToken);
+	}
+
+    public async Task<IList<TagItem>> GetListTagAsync(CancellationToken cancellationToken = default)
+    {
+		IQueryable<Tag> taglist = _context.Set<Tag>();
+
+		return await taglist
+			.Select(x => new TagItem()
+			{
+				Id = x.Id,
+				Name = x.Name,
+				UrlSlug = x.UrlSlug,
+				Description = x.Description,
+				PostCount = x.Posts.Count(p => p.Published)
+			})
+			.ToListAsync(cancellationToken);
+    }
 }
