@@ -172,7 +172,13 @@ namespace WebApp.Areas.Admin.Controllers
 		}
 
 
-		private async Task PopulatePostFilterModeAsync(PostFilterModel model)
+        public async Task<IActionResult> DefaultFilter(PostFilterModel model	)
+        {
+            model = new PostFilterModel();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private async Task PopulatePostFilterModeAsync(PostFilterModel model)
 		{
 			var authors = await _blogRepository.GetAuthorsAsync();
 			var categories = await _blogRepository.GetCategoriesAsync();
