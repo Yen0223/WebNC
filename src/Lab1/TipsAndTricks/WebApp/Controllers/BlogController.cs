@@ -72,7 +72,25 @@ namespace WebApp.Controllers
             var post = await _blogRepository.GetPostAsync(year, month, slug);
             return View(post);
         }
-			public IActionResult About() 
+
+        public async Task<IActionResult> Archives(
+                int year,
+                int month)
+        {
+            var postQuery = new PostQuery()
+            {
+                PublishedOnly = true,
+                YearPost = year,
+                MonthPost = month
+            };
+            var postList = await _blogRepository.GetPagedPostsAsync(postQuery);
+
+            ViewBag.PostQuery = postQuery;
+
+            return View(postList);
+        }
+
+        public IActionResult About() 
             => View();
 
         public IActionResult Contact() 
