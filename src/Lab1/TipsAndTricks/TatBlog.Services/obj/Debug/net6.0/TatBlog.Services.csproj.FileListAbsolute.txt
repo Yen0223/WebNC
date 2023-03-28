@@ -1,3 +1,8 @@
+D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.AssemblyReference.cache
+D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.AssemblyInfoInputs.cache
+D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.AssemblyInfo.cs
+D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.CoreCompileInputs.cache
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Services.deps.json
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Services.dll
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Services.pdb
@@ -5,11 +10,6 @@ D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Core.
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Data.dll
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Core.pdb
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Data.pdb
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.AssemblyReference.cache
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.GeneratedMSBuildEditorConfig.editorconfig
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.AssemblyInfoInputs.cache
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.AssemblyInfo.cs
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.CoreCompileInputs.cache
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.CopyComplete
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.dll
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\refint\TatBlog.Services.dll

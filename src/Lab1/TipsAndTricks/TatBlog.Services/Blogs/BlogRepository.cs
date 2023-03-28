@@ -242,14 +242,14 @@ public class BlogRepository : IBlogRepository
 			.FirstOrDefaultAsync(cancellationToken);
 	}
 
-	public async Task<Author> GetAuthorFromSlugAsync(
-		string slug,
-		CancellationToken cancellationToken = default)
-	{
-		return await _context.Set<Author>()
-			.Where(a => a.UrlSlug == slug)
-			.FirstOrDefaultAsync(cancellationToken);
-	}
+	//public async Task<Author> GetAuthorFromSlugAsync(
+	//	string slug,
+	//	CancellationToken cancellationToken = default)
+	//{
+	//	return await _context.Set<Author>()
+	//		.Where(a => a.UrlSlug == slug)
+	//		.FirstOrDefaultAsync(cancellationToken);
+	//}
 
 	public async Task<Tag> GetTagFromSlugAsync(
 		string slug,
@@ -260,44 +260,44 @@ public class BlogRepository : IBlogRepository
 			.FirstOrDefaultAsync(cancellationToken);
 	}
 
-	public async Task<IList<AuthorItem>> GetAuthorsAsync(CancellationToken cancellationToken = default)
-	{
-        return await _context.Set<Author>()
-            .OrderBy(a => a.FullName)
-            .Select(a => new AuthorItem()
-            {
-                Id = a.Id,
-                FullName = a.FullName,
-                Email = a.Email,
-                JoinedDate = a.JoinedDate,
-                ImageUrl = a.ImageUrl,
-                UrlSlug = a.UrlSlug,
-                Notes = a.Notes,
-                PostCount = a.Posts.Count(p => p.Published)
-            })
-            .ToListAsync();
-	}
+	//public async Task<IList<AuthorItem>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+	//{
+ //       return await _context.Set<Author>()
+ //           .OrderBy(a => a.FullName)
+ //           .Select(a => new AuthorItem()
+ //           {
+ //               Id = a.Id,
+ //               FullName = a.FullName,
+ //               Email = a.Email,
+ //               JoinedDate = a.JoinedDate,
+ //               ImageUrl = a.ImageUrl,
+ //               UrlSlug = a.UrlSlug,
+ //               Notes = a.Notes,
+ //               PostCount = a.Posts.Count(p => p.Published)
+ //           })
+ //           .ToListAsync();
+	//}
 
-	public async Task<IList<AuthorItem>> GetBestAuthorsAsync(
-		int number, 
-		CancellationToken cancellationToken = default)
-	{
-		return await _context.Set<Author>()
-			.Select(a => new AuthorItem()
-			{
-				Id = a.Id,
-				FullName = a.FullName,
-				Email = a.Email,
-				JoinedDate = a.JoinedDate,
-				ImageUrl = a.ImageUrl,
-				UrlSlug = a.UrlSlug,
-				Notes = a.Notes,
-				PostCount = a.Posts.Count(p => p.Published)
-			})
-			.OrderByDescending(a => a.PostCount)
-			.Take(number)
-			.ToListAsync();
-	}
+	//public async Task<IList<AuthorItem>> GetBestAuthorsAsync(
+	//	int number, 
+	//	CancellationToken cancellationToken = default)
+	//{
+	//	return await _context.Set<Author>()
+	//		.Select(a => new AuthorItem()
+	//		{
+	//			Id = a.Id,
+	//			FullName = a.FullName,
+	//			Email = a.Email,
+	//			JoinedDate = a.JoinedDate,
+	//			ImageUrl = a.ImageUrl,
+	//			UrlSlug = a.UrlSlug,
+	//			Notes = a.Notes,
+	//			PostCount = a.Posts.Count(p => p.Published)
+	//		})
+	//		.OrderByDescending(a => a.PostCount)
+	//		.Take(number)
+	//		.ToListAsync();
+	//}
 
 	public async Task<Post> GetPostByIdAsync(
         int id,
