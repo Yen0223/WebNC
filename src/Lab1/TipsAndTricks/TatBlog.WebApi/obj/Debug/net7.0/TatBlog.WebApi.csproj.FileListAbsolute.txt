@@ -85,3 +85,4 @@ D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WebApi\obj\Debug\net7.0\refint\TatBlog.
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WebApi\obj\Debug\net7.0\TatBlog.WebApi.pdb
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WebApi\obj\Debug\net7.0\TatBlog.WebApi.genruntimeconfig.cache
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WebApi\obj\Debug\net7.0\ref\TatBlog.WebApi.dll
+D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.WebApi\obj\Debug\net7.0\TatBlog.WebApi.MvcApplicationPartsAssemblyInfo.cs
