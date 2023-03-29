@@ -7,6 +7,7 @@ namespace WebApp.Components
     {
         private readonly IBlogRepository _blogRepository;
 
+
         public BestAuthor(IBlogRepository blogRepository)
         {
             _blogRepository = blogRepository;

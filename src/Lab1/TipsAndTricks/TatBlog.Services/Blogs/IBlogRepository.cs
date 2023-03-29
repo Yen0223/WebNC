@@ -58,7 +58,12 @@ public interface IBlogRepository
 		int pageSize = 10,
 		CancellationToken cancellationToken = default);
 
-	Task<Post> GetPostByIdAsync(
+	Task<IPagedList<Post>> GetPagedPostsAsync<T>(
+	PostQuery postQuery,
+	IPagingParams pagingParams,
+    Func<IQueryable<Post>, IQueryable<T>> mapper);
+
+    Task<Post> GetPostByIdAsync(
 		int id,
 		bool includeDetail = false,
 		CancellationToken cancellationToken = default);
@@ -85,9 +90,10 @@ public interface IBlogRepository
 
 	Task<IList<TagItem>> GetListTagAsync(
 		CancellationToken cancellationToken = default);
-	//Task<IList<AuthorItem>> GetBestAuthorsAsync(
-	//	int number,
-	//	CancellationToken cancellationToken = default);
+
+	Task<IList<AuthorItem>> GetBestAuthorsAsync(
+		int number,
+		CancellationToken cancellationToken = default);
 
 	Task<IList<DatePost>> GetPostByMonthAsync(
 		int month,
