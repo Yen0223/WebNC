@@ -459,4 +459,15 @@ public class BlogRepository : IBlogRepository
 				.Take(month)
 				.ToListAsync(cancellationToken);
 	}
+
+    public async Task<IPagedList<T>> GetPagedPostsAsync<T>(
+            PostQuery postQuery,
+            IPagingParams pagingParams,
+            Func<IQueryable<Post>, IQueryable<T>> mapper)
+    {
+        var posts = FilterPosts(postQuery);
+        var projectedPosts = mapper(posts);
+
+        return await projectedPosts.ToPagedListAsync(pagingParams);
+    }
 }

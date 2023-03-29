@@ -58,10 +58,10 @@ public interface IBlogRepository
 		int pageSize = 10,
 		CancellationToken cancellationToken = default);
 
-	Task<IPagedList<Post>> GetPagedPostsAsync<T>(
-	PostQuery postQuery,
-	IPagingParams pagingParams,
-    Func<IQueryable<Post>, IQueryable<T>> mapper);
+	Task<IPagedList<T>> GetPagedPostsAsync<T>(
+		   PostQuery postQuery,
+		   IPagingParams pagingParams,
+		   Func<IQueryable<Post>, IQueryable<T>> mapper);
 
     Task<Post> GetPostByIdAsync(
 		int id,

@@ -13,13 +13,14 @@ public class MapsterConfiguration : IRegister
         config.NewConfig<Author, AuthorDto>();
         config.NewConfig<Author, AuthorItem>()
             .Map(dest => dest.PostCount,
-            src => src.Posts == null ? 0 : src.Posts.Count);
+                src => src.Posts == null ? 0 : src.Posts.Count);
 
         config.NewConfig<AuthorEditModel, Author>();
+
         config.NewConfig<Category, CategoryDto>();
         config.NewConfig<Category, CategoryItem>()
             .Map(dest => dest.PostCount,
-            src => src.Posts == null ? 0 : src.Posts.Count);
+                src => src.Posts == null ? 0 : src.Posts.Count);
 
         config.NewConfig<Post, PostDto>();
         config.NewConfig<Post, PostDetail>();
