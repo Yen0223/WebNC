@@ -84,30 +84,30 @@ public class BlogRepository : IBlogRepository
              cancellationToken);
     }
 
-    public async Task<IList<CategoryItem>> GetCategoriesAsync(
-        bool showOnMenu = false,
-        CancellationToken cancellationToken = default)
-    {
-        IQueryable<Category> categories = _context.Set<Category>();
+    //public async Task<IList<CategoryItem>> GetCategoriesAsync(
+    //    bool showOnMenu = false,
+    //    CancellationToken cancellationToken = default)
+    //{
+    //    IQueryable<Category> categories = _context.Set<Category>();
 
-        if (showOnMenu)
-        {
-            categories = categories.Where(x => x.ShowOnMenu);
-        }
+    //    if (showOnMenu)
+    //    {
+    //        categories = categories.Where(x => x.ShowOnMenu);
+    //    }
 
-        return await categories
-            .OrderBy(x => x.Name)
-            .Select(x => new CategoryItem()
-            {
-                Id = x.Id,
-                Name = x.Name,
-                UrlSlug = x.UrlSlug,
-                Description = x.Description,
-                ShowOnMenu = x.ShowOnMenu,
-                PostCount = x.Posts.Count(p => p.Published)
-            })
-            .ToListAsync(cancellationToken);
-    }
+    //    return await categories
+    //        .OrderBy(x => x.Name)
+    //        .Select(x => new CategoryItem()
+    //        {
+    //            Id = x.Id,
+    //            Name = x.Name,
+    //            UrlSlug = x.UrlSlug,
+    //            Description = x.Description,
+    //            ShowOnMenu = x.ShowOnMenu,
+    //            PostCount = x.Posts.Count(p => p.Published)
+    //        })
+    //        .ToListAsync(cancellationToken);
+    //}
 
 	public async Task<Tag> GetTagAsync(
 		string slug, CancellationToken cancellationToken = default)
@@ -233,14 +233,14 @@ public class BlogRepository : IBlogRepository
 
 	}
 
-	public async Task<Category> GetCategoryFromSlugAsync(
-        string slug,
-        CancellationToken cancellationToken = default)
-	{
-		return await _context.Set<Category>()
-			.Where(t => t.UrlSlug == slug)
-			.FirstOrDefaultAsync(cancellationToken);
-	}
+	//public async Task<Category> GetCategoryFromSlugAsync(
+ //       string slug,
+ //       CancellationToken cancellationToken = default)
+	//{
+	//	return await _context.Set<Category>()
+	//		.Where(t => t.UrlSlug == slug)
+	//		.FirstOrDefaultAsync(cancellationToken);
+	//}
 
 	//public async Task<Author> GetAuthorFromSlugAsync(
 	//	string slug,
@@ -380,18 +380,18 @@ public class BlogRepository : IBlogRepository
 		return post.Published;
 	}
 
-	public async Task<bool> DeleteCategoryAsync(
-		int categoryId, CancellationToken cancellationToken = default)
-	{
-		var category = await _context.Set<Category>().FindAsync(categoryId);
+	//public async Task<bool> DeleteCategoryAsync(
+	//	int categoryId, CancellationToken cancellationToken = default)
+	//{
+	//	var category = await _context.Set<Category>().FindAsync(categoryId);
 
-		if (category is null) return false;
+	//	if (category is null) return false;
 
-		_context.Set<Category>().Remove(category);
-		var rowsCount = await _context.SaveChangesAsync(cancellationToken);
+	//	_context.Set<Category>().Remove(category);
+	//	var rowsCount = await _context.SaveChangesAsync(cancellationToken);
 
-		return rowsCount > 0;
-	}
+	//	return rowsCount > 0;
+	//}
 
 	public async Task<bool> DeletePostAsync(
 		int postId, 
@@ -470,4 +470,5 @@ public class BlogRepository : IBlogRepository
 
         return await projectedPosts.ToPagedListAsync(pagingParams);
     }
+
 }

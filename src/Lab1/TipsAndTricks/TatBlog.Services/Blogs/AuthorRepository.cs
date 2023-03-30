@@ -20,7 +20,8 @@ public class AuthorRepository : IAuthorRepository
 	}
 
 	public async Task<Author> GetAuthorBySlugAsync(
-		string slug, CancellationToken cancellationToken = default)
+		string slug,
+		CancellationToken cancellationToken = default)
 	{
 		return await _context.Set<Author>()
 			.FirstOrDefaultAsync(a => a.UrlSlug == slug, cancellationToken);

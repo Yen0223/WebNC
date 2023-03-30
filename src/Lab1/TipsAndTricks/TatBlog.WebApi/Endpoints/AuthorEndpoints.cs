@@ -39,26 +39,22 @@ public static class AuthorEndpoints
         routeGroupBuilder.MapPost("/", AddAuthor)
             .WithName("AddNewAuthor")
             .AddEndpointFilter<ValidatorFilter<AuthorEditModel>>()
-            .RequireAuthorization()
             .Produces(401)
             .Produces<ApiResponse<AuthorItem>>();
 
         routeGroupBuilder.MapPost("/{id:int}/picture", SetAuthorPicture)
             .WithName("SetAuthorPicture")
-            .RequireAuthorization()
             .Accepts<IFormFile>("multipart/form-data")
             .Produces(401)
             .Produces<ApiResponse<string>>();
 
         routeGroupBuilder.MapPut("/{id:int}", UpdateAuthor)
             .WithName("UpdateAnAuthor")
-            .RequireAuthorization()
             .Produces(401)
             .Produces<ApiResponse<string>>();
 
         routeGroupBuilder.MapDelete("/{id:int}", DeleteAuthor)
             .WithName("DeleteAnAuthor")
-            .RequireAuthorization()
             .Produces(401)
             .Produces<ApiResponse<string>>();
 

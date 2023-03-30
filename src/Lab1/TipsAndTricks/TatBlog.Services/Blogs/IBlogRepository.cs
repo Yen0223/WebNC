@@ -32,9 +32,9 @@ public interface IBlogRepository
 	//Task<IList<AuthorItem>> GetAuthorsAsync(
 	//	CancellationToken cancellationToken = default);
 
-	Task<IList<CategoryItem>> GetCategoriesAsync(
-		bool showOnMenu = false,
-		CancellationToken cancellationToken = default);
+	//Task<IList<CategoryItem>> GetCategoriesAsync(
+	//	bool showOnMenu = false,
+	//	CancellationToken cancellationToken = default);
 
 	Task<Tag> GetTagAsync(
 		string slug, 
@@ -48,9 +48,10 @@ public interface IBlogRepository
 	Task<Tag> GetTagFromSlugAsync(
 		string slug,
 		CancellationToken cancellationToken = default);
-	Task<Category> GetCategoryFromSlugAsync(
-		string slug,
-		CancellationToken cancellationToken = default);
+
+	//Task<Category> GetCategoryFromSlugAsync(
+	//	string slug,
+	//	CancellationToken cancellationToken = default);
 
 	Task<IPagedList<Post>> GetPagedPostsAsync(
 		PostQuery condition,
@@ -76,9 +77,9 @@ public interface IBlogRepository
 	   int postId, 
 	   CancellationToken cancellationToken = default);
 
-	Task<bool> DeleteCategoryAsync(
-		int categoryId, 
-		CancellationToken cancellationToken = default);
+	//Task<bool> DeleteCategoryAsync(
+	//	int categoryId, 
+	//	CancellationToken cancellationToken = default);
 
 	Task<bool> DeletePostAsync(
 		int postId, 
