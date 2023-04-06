@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZcNC5I6RLl5hlZXyfiMWNwbCcjsrkAUo8zOFeZCa+1N1QaEHgCOi7NlLq2xNgg+AwN6L+sPrhAHgf0KXMGTOhw==",
+  "dgSpecHash": "jYyvDFKN6qW2FiXDRbYpL9ivB8mM2fsIyUGPxp0976w/5x8sNKFxptKqEK1L+tjUadWd+gUAaGlSnQynpA3YBQ==",
   "success": true,
-  "projectFilePath": "D:\\Web NC\\src\\Lab1\\TipsAndTricks\\WebApp\\WebApp.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\WebNC\\src\\TipsAndTricks\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

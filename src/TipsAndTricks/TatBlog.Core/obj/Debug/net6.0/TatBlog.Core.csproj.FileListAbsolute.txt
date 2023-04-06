@@ -10,3 +10,15 @@ D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.dll
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\refint\TatBlog.Core.dll
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.pdb
 D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\ref\TatBlog.Core.dll
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.deps.json
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.dll
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.pdb
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.AssemblyInfo.cs
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.dll
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\refint\TatBlog.Core.dll
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.pdb
+C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Core\obj\Debug\net6.0\ref\TatBlog.Core.dll
