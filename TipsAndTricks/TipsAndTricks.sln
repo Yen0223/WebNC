@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TatBlog.Core", "TatBlog.Core\TatBlog.Core.csproj", "{1120D749-FC85-4B62-AA70-34B23CD3C148}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TatBlog.Data", "TatBlog.Data\TatBlog.Data.csproj", "{0C1D474F-1DE6-4E31-869A-FF3BB6451985}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TatBlog.Services", "TatBlog.Services\TatBlog.Services.csproj", "{7B04DF36-3D72-4B72-91F1-CC01E3F9C9DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TatBlog.WinApp", "TatBlog.WinApp\TatBlog.WinApp.csproj", "{20EF2E08-4192-44E8-AD94-1EBB6BCAA0FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{B225CA2A-0317-473A-9677-D092FCBAFD2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatBlog.WebApi", "TatBlog.WebApi\TatBlog.WebApi.csproj", "{8F607E98-94FD-4D38-AD1C-1A0CFCBE7A4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1120D749-FC85-4B62-AA70-34B23CD3C148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1120D749-FC85-4B62-AA70-34B23CD3C148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1120D749-FC85-4B62-AA70-34B23CD3C148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1120D749-FC85-4B62-AA70-34B23CD3C148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C1D474F-1DE6-4E31-869A-FF3BB6451985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C1D474F-1DE6-4E31-869A-FF3BB6451985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C1D474F-1DE6-4E31-869A-FF3BB6451985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1D474F-1DE6-4E31-869A-FF3BB6451985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B04DF36-3D72-4B72-91F1-CC01E3F9C9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B04DF36-3D72-4B72-91F1-CC01E3F9C9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B04DF36-3D72-4B72-91F1-CC01E3F9C9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B04DF36-3D72-4B72-91F1-CC01E3F9C9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20EF2E08-4192-44E8-AD94-1EBB6BCAA0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EF2E08-4192-44E8-AD94-1EBB6BCAA0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EF2E08-4192-44E8-AD94-1EBB6BCAA0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EF2E08-4192-44E8-AD94-1EBB6BCAA0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B225CA2A-0317-473A-9677-D092FCBAFD2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B225CA2A-0317-473A-9677-D092FCBAFD2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B225CA2A-0317-473A-9677-D092FCBAFD2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B225CA2A-0317-473A-9677-D092FCBAFD2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F607E98-94FD-4D38-AD1C-1A0CFCBE7A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F607E98-94FD-4D38-AD1C-1A0CFCBE7A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F607E98-94FD-4D38-AD1C-1A0CFCBE7A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F607E98-94FD-4D38-AD1C-1A0CFCBE7A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {522E42D1-A925-4416-9760-EE443CF9A51C}
+	EndGlobalSection
+EndGlobal
