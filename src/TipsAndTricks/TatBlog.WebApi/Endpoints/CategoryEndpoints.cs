@@ -2,6 +2,7 @@
 using Mapster;
 using MapsterMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net;
 using TatBlog.Core.Collections;
 using TatBlog.Core.DTO;
@@ -45,13 +46,12 @@ public static class CategoryEndpoints
             .Produces(401)
             .Produces<ApiResponse<string>>();
 
-        //routeGroupBuilder.MapDelete("/{id:int}", DeleteCategory)
-        //    .WithName("DeleteCategory")
-        //    .Produces(401)
-        //    .Produces<ApiResponse<string>>();
 
         return app;
     }
+
+
+    
 
     private static async Task<IResult> GetCategory(
         [AsParameters] CategoryFilterModel model,
@@ -87,7 +87,7 @@ public static class CategoryEndpoints
             PublishedOnly = true,
         };
 
-        var postsList = await blogRepository.GetPagedPostsAsync(
+        var postsList = await blogRepository.GetPagePostsAsync(
             postQuery, pagingModel,
             posts => posts.ProjectToType<PostDto>());
 
@@ -107,7 +107,7 @@ public static class CategoryEndpoints
             PublishedOnly = true,
         };
 
-        var postsList = await blogRepository.GetPagedPostsAsync(
+        var postsList = await blogRepository.GetPagePostsAsync(
             postQuery, pagingModel,
             posts => posts.ProjectToType<PostDto>());
         var paginationResult = new PaginationResult<PostDto>(postsList);

@@ -31,7 +31,7 @@ public static class AuthorEndpoints
             .Produces(404);
 
         routeGroupBuilder.MapGet(
-            "/{slug:regex(^[a-z0-9-]+$)}/posts",
+            "/{slug:regex(^[a-z0-9_-]+$)}/posts",
             GetPostsByAuthorsSlug)
             .WithName("GetPostsByAuthorsSlug")
             .Produces<ApiResponse<PaginationResult<PostDto>>>();
@@ -98,10 +98,9 @@ public static class AuthorEndpoints
             PublishedOnly = true,
         };
 
-        var postsList = await blogRepository.GetPagedPostsAsync(
+        var postsList = await blogRepository.GetPagePostsAsync(
             postQuery, pagingModel,
             posts => posts.ProjectToType<PostDto>());
-
         var paginationResult = new PaginationResult<PostDto>(postsList);
 
         return Results.Ok(ApiResponse.Success(paginationResult));
@@ -118,7 +117,7 @@ public static class AuthorEndpoints
             PublishedOnly = true,
         };
 
-        var postsList = await blogRepository.GetPagedPostsAsync(
+        var postsList = await blogRepository.GetPagePostsAsync(
             postQuery, pagingModel,
             posts => posts.ProjectToType<PostDto>());
         var paginationResult = new PaginationResult<PostDto>(postsList);
@@ -147,13 +146,15 @@ public static class AuthorEndpoints
     }
 
     private static async Task<IResult> SetAuthorPicture(
-        int id, IFormFile imageFile,
+        int id, 
+        IFormFile imageFile,
         IAuthorRepository authorRepository,
         IMediaManager mediaManager)
     {
         var imageUrl = await mediaManager.SaveFileAsync(
             imageFile.OpenReadStream(),
-            imageFile.FileName, imageFile.ContentType);
+            imageFile.FileName, 
+            imageFile.ContentType);
 
         if (string.IsNullOrWhiteSpace(imageUrl))
         {

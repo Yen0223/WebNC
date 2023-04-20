@@ -10,6 +10,8 @@
 
         public string Description { get; set; }
 
+        public bool Published { get; set; }
+
         public string Meta { get; set; }
 
         public string UrlSlug { get; set; }

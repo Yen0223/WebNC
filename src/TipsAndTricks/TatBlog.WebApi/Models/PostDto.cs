@@ -8,6 +8,8 @@
 
         public string ShortDescription { get; set; }
 
+        public bool Published { get; set; }
+
         public string UrlSlug { get; set; }
 
         public string ImageUrl { get; set; }

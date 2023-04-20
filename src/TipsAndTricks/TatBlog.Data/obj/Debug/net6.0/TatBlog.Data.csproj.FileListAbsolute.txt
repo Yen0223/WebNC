@@ -1,18 +1,3 @@
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Data.deps.json
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Data.dll
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Data.pdb
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Core.dll
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Core.pdb
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.csproj.AssemblyReference.cache
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.GeneratedMSBuildEditorConfig.editorconfig
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.AssemblyInfoInputs.cache
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.AssemblyInfo.cs
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.csproj.CoreCompileInputs.cache
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.csproj.CopyComplete
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.dll
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\refint\TatBlog.Data.dll
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.pdb
-D:\Web NC\src\Lab1\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\ref\TatBlog.Data.dll
 C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Data.deps.json
 C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Data.dll
 C:\Users\Asus\Desktop\WebNC\src\TipsAndTricks\TatBlog.Data\bin\Debug\net6.0\TatBlog.Data.pdb

@@ -476,7 +476,7 @@ public class BlogRepository : IBlogRepository
 				.ToListAsync(cancellationToken);
 	}
 
-    public async Task<IPagedList<T>> GetPagedPostsAsync<T>(
+    public async Task<IPagedList<T>> GetPagePostsAsync<T>(
             PostQuery postQuery,
             IPagingParams pagingParams,
             Func<IQueryable<Post>, IQueryable<T>> mapper)
