@@ -25,7 +25,7 @@ export function getAuthors(
   );
 }
 export function getFilter() {
-  return get_api("https://localhost:7095/api/posts/get-filter");
+  return get_api("https://localhost:7094/api/posts/get-filter");
 }
 
 export function getPostsFilter(
@@ -39,7 +39,7 @@ export function getPostsFilter(
   sortColumn = "",
   sortOrder = ""
 ) {
-  let url = new URL("https://localhost:7085/api/posts/get-posts-filter");
+  let url = new URL("https://localhost:7094/api/posts/get-posts-filter");
   keyword !== "" && url.searchParams.append("Keyword", keyword);
   authorId !== "" && url.searchParams.append("AuthorId", authorId);
   categoryId !== "" && url.searchParams.append("CategoryId", categoryId);
