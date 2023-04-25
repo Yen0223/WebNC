@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jGwrrL13AeylSTilG+xq3PKqI6ychCfBdea+Mpho0+Q=",
+  "Hash": "TuIu61MftM4yMY1oHbgaAzJuk2rfTkRtsiTDU7w+Qeg=",
   "Source": "TatBlog.WebApi",
   "BasePath": "_content/TatBlog.WebApi",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\WebNC\\src\\TipsAndTricks\\TatBlog.WebApi\\wwwroot\\uploads\\pictures\\65e7360e6d594ade94ae54cfd3531e5d.jpg",
+      "SourceId": "TatBlog.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\WebNC\\src\\TipsAndTricks\\TatBlog.WebApi\\wwwroot\\",
+      "BasePath": "_content/TatBlog.WebApi",
+      "RelativePath": "uploads/pictures/65e7360e6d594ade94ae54cfd3531e5d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\pictures\\65e7360e6d594ade94ae54cfd3531e5d.jpg"
+    }
+  ]
 }

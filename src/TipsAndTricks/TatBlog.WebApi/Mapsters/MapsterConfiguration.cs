@@ -24,5 +24,6 @@ public class MapsterConfiguration : IRegister
 
         config.NewConfig<Post, PostDto>();
         config.NewConfig<Post, PostDetail>();
+        config.NewConfig<Post, PostItem>();
     }
 }

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\WebNC\\src\\TipsAndTricks\\TatBlog.WebApi\\wwwroot\\uploads\\pictures\\65e7360e6d594ade94ae54cfd3531e5d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\pictures\\65e7360e6d594ade94ae54cfd3531e5d.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TatBlog.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TatBlog.WebApi.props",
+      "PackagePath": "build\\TatBlog.WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TatBlog.WebApi.props",
+      "PackagePath": "buildMultiTargeting\\TatBlog.WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TatBlog.WebApi.props",
+      "PackagePath": "buildTransitive\\TatBlog.WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -11,22 +11,33 @@ namespace TatBlog.Services.Extensions
 	{
 		public static string GenerateSlug(this string value)
 		{
-			string str = value.RemoveAccent().ToLower();
-			// invalid chars           
-			str = Regex.Replace(str, @"[^a-z0-9\s-]", "");
-			// convert multiple spaces into one space   
-			str = Regex.Replace(str, @"\s+", " ").Trim();
-			// cut and trim 
-			str = str.Substring(0, str.Length <= 45 ? str.Length : 45).Trim();
-			str = Regex.Replace(str, @"\s", "-");    
-			return str;
+            //First to lower case
+            value = value.ToLowerInvariant();
 
-		}
+            //Remove all accents
+            //var bytes = Encoding.GetEncoding("Cyrillic").GetBytes(value);
+            //value = Encoding.ASCII.GetString(bytes);
 
-		private  static string RemoveAccent(this string txt)
-		{
-			byte[] bytes = System.Text.Encoding.GetEncoding("Cyrillic").GetBytes(txt);
-			return System.Text.Encoding.ASCII.GetString(bytes);
-		}
+            //Replace spaces
+            value = Regex.Replace(value, @"\s", "-", RegexOptions.Compiled);
+
+            //Remove invalid chars
+            value = Regex.Replace(value, @"[^a-z0-9\s-_]", "", RegexOptions.Compiled);
+
+            //Trim dashes from end
+            value = value.Trim('-', '_');
+
+            //Replace double occurences of - or _
+            value = Regex.Replace(value, @"([-_]){2,}", "$1", RegexOptions.Compiled);
+
+            return value;
+
+        }
+
+		//private  static string RemoveAccent(this string txt)
+		//{
+		//	byte[] bytes = System.Text.Encoding.GetEncoding("Cyrillic").GetBytes(txt);
+		//	return System.Text.Encoding.ASCII.GetString(bytes);
+		//}
 	}
 }

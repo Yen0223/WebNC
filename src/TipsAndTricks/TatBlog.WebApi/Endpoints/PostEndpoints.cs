@@ -28,7 +28,7 @@ public static class PostEndpoints
 
         routeGroupBuilder.MapGet("/{id:int}", GetPostDetails)
             .WithName("GetPostById")
-            .Produces<ApiResponse<PostItem>>();
+            .Produces<ApiResponse<PaginationResult<PostItem>>>();
 
         routeGroupBuilder.MapPost("/", AddPost)
             .WithName("AddNewPost")
@@ -55,11 +55,11 @@ public static class PostEndpoints
 
         routeGroupBuilder.MapGet("/get-posts-filter", GetFilteredPosts)
             .WithName("GetFilteredPost")
-            .Produces<ApiResponse<PostDto>>();
+            .Produces<ApiResponse<PaginationResult<PostDto>>>();
 
         routeGroupBuilder.MapGet("/get-filter", GetFilter)
             .WithName("GetFilter")
-            .Produces<ApiResponse<PostFilterModel>>();
+            .Produces<ApiResponse<PaginationResult<PostFilterModel>>>();
 
         return app;
     }
@@ -213,19 +213,19 @@ public static class PostEndpoints
         post.Published = model.Published;
         post.ModifiedDate = DateTime.Now;
         post.UrlSlug = model.Title.GenerateSlug();
-        if (model.ImageFile?.Length > 0)
-        {
-            string hostname =
-           $"{context.Request.Scheme}://{context.Request.Host}{context.Request.PathBase}/",
-            uploadedPath = await
-           mediaManager.SaveFileAsync(model.ImageFile.OpenReadStream(),
-            model.ImageFile.FileName,
-            model.ImageFile.ContentType);
-            if (!string.IsNullOrWhiteSpace(uploadedPath))
-            {
-                post.ImageUrl = uploadedPath;
-            }
-        }
+        //if (model.ImageFile?.Length > 0)
+        //{
+        //    string hostname =
+        //   $"{context.Request.Scheme}://{context.Request.Host}{context.Request.PathBase}/",
+        //    uploadedPath = await
+        //   mediaManager.SaveFileAsync(model.ImageFile.OpenReadStream(),
+        //    model.ImageFile.FileName,
+        //    model.ImageFile.ContentType);
+        //    if (!string.IsNullOrWhiteSpace(uploadedPath))
+        //    {
+        //        post.ImageUrl = hostname + uploadedPath;    
+        //    }
+        //}
         await blogRepository.CreateOrUpdatePostAsync(post,
        model.GetSelectedTags());
         return Results.Ok(ApiResponse.Success(

@@ -39,8 +39,9 @@ namespace TatBlog.WebApi.Models
         [DisplayName("Từ khóa (mỗi từ 1 dòng)")]
         [Required]
         public string SelectedTags { get; set; }
-        public IEnumerable<SelectListItem> AuthorList { get; set; }
-        public IEnumerable<SelectListItem> CategoryList { get; set; }
+
+        //public IEnumerable<SelectListItem> AuthorList { get; set; }
+        //public IEnumerable<SelectListItem> CategoryList { get; set; }
         public List<string> GetSelectedTags()
         {
             return (SelectedTags ?? "")
